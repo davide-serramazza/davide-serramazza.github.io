@@ -1,188 +1,303 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
 	<head>
-		<meta charset="utf-8">
-    <!--
-
-     -->
-    <link rel="icon" href="./assets/images/myself.webp" />
-		<title>Davide Serramazza website</title>
-    <meta name="description" content="Personal web page.">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-		<link rel="stylesheet" href="./css/layout.css">
-        <link rel="stylesheet" href="./css/typography.css">
-        <link rel="stylesheet" href="./css/utilities.css">
-
-		<script defer src="./js/script.js"></script>
+		<title>Davide Serramazza - PhD Candidate in XAI</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Academic CV of Davide Serramazza, PhD Candidate in Explainable AI for Time Series at University College Dublin" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Additional custom styles for education/publications */
+			.education-item, .publication-item, .job-item {
+				margin-bottom: 2em;
+			}
+			.education-header, .publication-header, .job-header {
+				display: flex;
+				justify-content: space-between;
+				align-items: baseline;
+				flex-wrap: wrap;
+				margin-bottom: 0.3em;
+			}
+			.education-date, .publication-date, .job-date {
+				font-size: 0.85em;
+				color: #787878;
+			}
+			.education-institution, .publication-venue, .job-title {
+				font-weight: 600;
+				color: #5a5a5a;
+				margin: 0.2em 0;
+				font-size: 0.9em;
+			}
+			.education-details, .publication-authors, .job-details {
+				font-size: 0.9em;
+				line-height: 1.4;
+				margin: 0.5em 0 0 0;
+				color: #5a5a5a;
+			}
+			.education-divider, .publication-divider {
+				margin: 1.2em 0;
+				border: 0;
+				border-top: 1px solid #e0e0e0;
+			}
+			.skill-list {
+				list-style: none;
+				padding-left: 0;
+			}
+			.skill-list li {
+				margin-bottom: 0.8em;
+				padding-left: 1.2em;
+				position: relative;
+			}
+			.skill-list li:before {
+				content: "▹";
+				position: absolute;
+				left: 0;
+				color: #49bf9d;
+			}
+			@media screen and (max-width: 736px) {
+				.education-header, .publication-header, .job-header {
+					flex-direction: column;
+				}
+			}
+		</style>
 	</head>
-	<body>
-    <!-- NAVBAR -->
-    <div class="navbar">
-        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
-        <span class="nav-title">Davide Serramazza portfolio website</span>
-         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
-        <a class="button" href="mailto:davide.serramazza@ucdconnect.ie">
-          <span class="button-text">Contact Me</span>
-        </a>
-      </a>
-    </div>
+	<body class="is-preload">
 
-    <!-- MAIN PAGE CONTENT -->
-    <section id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-01.jpg">
-    <div id="main-content">
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/1664570621696.jpeg" alt="Davide Serramazza profile photo" /></a>
+					<h1><strong>Davide Italo Serramazza</strong><br />
+					PhD Candidate in XAI</h1>
+				</div>
+			</header>
 
-      <!-- PORTFOLIO HEADER -->
-      <div id="portfolio-header">
-        <div id="portfolio-header-image-container">
-          <img src="./assets/images/myself.webp" class="portfolio-header-image">
-          <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
-          </a>
-        </div>
-      </div>
+		<!-- Main -->
+			<div id="main">
 
-          <!-- 
-          QUICK INTRO
-          -->
-        <div id="portfolio-header-text-container">
-            <div class="header-text">
-              <span class="main-title">Hey, I'm Davide Serramazza.</span>
-              <div class="body-text"> I am currently a PhD candidate in Computer Science at
-                  <a href=https://www.ucd.ie/cs/>University College Dublin</a>
-                  (UCD), conducting research on the application of Explainable Artificial Intelligence (XAI) techniques
-                  for Multivariate Time Series Classification. <br />
+				<!-- One - About -->
+					<section id="one">
+						<header class="major">
+							<h2>PhD Candidate in XAI for Time Series at UCD<br />
+							Finalizing my thesis</h2>
+						</header>
+						<p>I am currently a PhD candidate in Computer Science at University College Dublin (UCD), conducting research on Explainable Artificial Intelligence (XAI) for Multivariate Time Series Classification. I'm really close to submitting my thesis in early September 2026.<br /><br />
+						My doctoral studies are fully funded by Science Foundation Ireland (SFI) through the ML-Labs research centre, and Dr. Georgiana Ifrim supervises me.<br /><br />
+						To enrich my research and foster international collaboration, I undertook a research visit to the Intelligent System Laboratory at the University of Bristol from April to July 2024, under the supervision of Dr. Zahraa Abdallah.<br /><br />
+						As I approach my graduation, I am exploring challenging opportunities where I can apply my research skills to complex problems. I am actively exploring my next career step and am particularly interested in roles involving research in real industrial settings.</p>
+						<ul class="actions">
+							<li><a href="Davide_Serramazza_Resume.pdf" class="button">Download CV (PDF)</a></li>
+						</ul>
+					</section>
 
-                  My doctoral studies are fully funded by Science Foundation Ireland (SFI) through the ML-Labs research
-                  centre, and I am supervised by <a href="https://people.ucd.ie/georgiana.ifrim">Dr. Georgiana Ifrim</a>.
-                  <br />
+				<!-- Education Section -->
+				<section id="education">
+				    <h2>Education</h2>
+				    
+				    <!-- PhD -->
+				    <div class="education-item">
+						<div class="education-header">
+						    <h3>PhD in XAI for Time Series</h3>
+						    <span class="education-date">September 2022 – September 2026 (thesis submission date)</span>
+						</div>
+						<p class="education-institution">University College Dublin, Ireland</p>
+						<p class="education-details">
+						    Research focus: Explainable Artificial Intelligence (XAI) for Multivariate Time Series Classification<br>
+						    Supervisor: Dr. Georgiana Ifrim<br>
+						    Funding: Science Foundation Ireland (SFI) via ML-Labs research centre
+						</p>
+				    </div>
+				    
+				    <hr class="education-divider">
+				    
+				    <!-- Master's -->
+				    <div class="education-item">
+						<div class="education-header">
+						    <h3>Master of Science in Computer Science</h3>
+						    <span class="education-date">September 2017 – March 2020</span>
+						</div>
+						<p class="education-institution">University of Pisa, Italy</p>
+						<p class="education-details">
+						    Specialization: Master degree in AI (Machine Learning & Deep Learning)<br>
+						    Final grade: <strong>110/110</strong><br>
+						    Thesis: Image captioning with structure generation
+						</p>
+				    </div>
+				    
+				    <hr class="education-divider">
+				    
+				    <!-- Bachelor's -->
+				    <div class="education-item">
+						<div class="education-header">
+						    <h3>Bachelor of Science in Computer Science</h3>
+						    <span class="education-date">September 2013 – September 2017</span>
+						</div>
+						<p class="education-institution">University of Pisa, Italy</p>
+						<p class="education-details">
+						    Final grade: <strong>100/110</strong>
+						</p>
+				    </div>
+				</section>
 
-                  To enrich my research and foster international collaboration, I undertook a research visit to the
-                  <a href="https://www.bristol.ac.uk/engineering/research/intelligent-systems/">Intelligent System Laboratory</a>
-                  at the University of Bristol from April to July 2024, under the supervisorship of
-                  <a href="https://www.bristol.ac.uk/people/person/Zahraa-Abdallah-06844ace-4e4b-4cf5-8212-7266bec7ede8/">Dr. Zahraa Abdallah</a>.
-                  <br />
+				<!-- Publications Section -->
+				<section id="publications">
+				    <h2>Publications</h2>
+				    
+				    <div class="publication-item">
+						<div class="publication-header">
+						    <h3>Evaluating explanation methods for multivariate time series classification</h3>
+						    <span class="publication-date">2023</span>
+						</div>
+						<p class="publication-venue">AALTD at PKDD‑ECML 2023 / Springer</p>
+						<p class="publication-authors">Serramazza, D. I., Nguyen, T. T., Le Nguyen, T., & Ifrim, G.</p>
+						<p class="publication-summary">Evaluating explanation methods for multivariate time series classifiers like ROCKET and dResNet using SHAP and dCAM. Results show SHAP outperforms dCAM; techniques for evaluating explainers need refinement.</p>
+						<a href="https://link.springer.com/chapter/10.1007/978-3-031-49896-1_11" class="button small">View Paper</a>
+				    </div>
+				    
+				    <hr class="publication-divider">
+				    
+				    <div class="publication-item">
+						<div class="publication-header">
+						    <h3>Improving the evaluation and actionability of explanation methods for multivariate time series classification</h3>
+						    <span class="publication-date">2024</span>
+						</div>
+						<p class="publication-venue">PKDD‑ECML 2024 Research Track / Springer</p>
+						<p class="publication-authors">Serramazza, D. I., Le Nguyen, T., & Ifrim, G.</p>
+						<p class="publication-summary">Improved InterpretTime evaluation methodology to work with non-deep learning classifiers, avoid custom training, and be more robust. Experiments confirm SHAP as the best explainer.</p>
+						<a href="https://link.springer.com/chapter/10.1007/978-3-031-70359-1_11" class="button small">View Paper</a>
+				    </div>
 
-                  As I approach my graduation, I am exploring challenging opportunities where I can apply my research
-                  skills to complex problems.
-                  I am actively exploring my next career step and am particularly interested in roles that leverage my
-                  background in XAI to solve real-world problems, whether in an academic or industry setting.
+				    <hr class="publication-divider">
 
+				    <div class="publication-item">
+						<div class="publication-header">
+						    <h3>A short tutorial for multivariate time series explanation using tsCaptum</h3>
+						    <span class="publication-date">2024</span>
+						</div>
+						<p class="publication-venue">Software Impacts, Elsevier</p>
+						<p class="publication-authors">Serramazza, D. I., Le Nguyen, T., & Ifrim, G.</p>
+						<p class="publication-summary">tsCaptum is a library bridging time series frameworks and Captum to efficiently generate saliency maps for univariate/multivariate classifiers using chunking to reduce computational cost.</p>
+						<a href="https://www.sciencedirect.com/science/article/pii/S2665963824001118" class="button small">View Paper</a>
+				    </div>
+				    
+				    <hr class="publication-divider">
+				    
+				    <div class="publication-item">
+						<div class="publication-header">
+						    <h3>An empirical evaluation of factors affecting SHAP explanation of time series classification</h3>
+						    <span class="publication-date">2025</span>
+						</div>
+						<p class="publication-venue">TempXAI at PKDD‑ECML 2025 / Springer</p>
+						<p class="publication-authors">Serramazza, D. I., Papadeas, N., Abdallah, Z., & Ifrim, G.</p>
+						<p class="publication-summary">Found that equal-length segmentation performs best, length-weighted normalization consistently improves quality, and average background yields a small performance boost for SHAP explanations.</p>
+						<a href="https://link.springer.com/chapter/10.1007/978-3-032-19105-2_32" class="button small">View Paper</a>
+				    </div>
+				</section>
 
-            </div>
-        </div>
-      </div>
+				<!-- Work Experience Section -->
+				<section id="experience">
+				    <h2>Work Experience</h2>
+				    
+				    <div class="job-item">
+						<div class="job-header">
+						    <h3>Research Fellow (Assegno di ricerca)</h3>
+						    <span class="job-date">May 2020 – May 2022</span>
+						</div>
+						<p class="job-title">University of Pisa, Italy</p>
+						<p class="job-details">Applied ML techniques to extract clips from documentary films for a web remix platform. Developed video processing pipelines using OpenCV and FFmpeg.</p>
+				    </div>
+				</section>
 
-      <!-- SECTIONS
-      -->
-      <div id="about-section">
-        <span class="subheader-text">My Background</span>
-        <div class="about-section-content">
-          <div class="body-text"> My education was carried out at <a href="https://di.unipi.it/en/">University of Pisa</a>,
-            Italy: my bachelor is in Computer Science, the final grade has been 100/110 while
-            my master degree is Machine/Deep Learning having a final grade of 110/110.</div>
-          <div class="body-text"> Previous work experience is as researcher at University of Pisa, the project dealt
-            with applying ML and Computer Vision techniques to process documentary films.
-            The ultimate goal of the project was enhancing these documentaries, promoting their vision, trough automatic
-            extractions of interesting short clips using ML/Computer Vision algorithms. </div>
-        </div>
-      </div>
+				<!-- Teaching Section (add this - it's important for academic CVs!) -->
+				<section id="teaching">
+				    <h2>Teaching Experience</h2>
+				    
+				    <div class="job-item">
+						<div class="job-header">
+						    <h3>Teaching Assistant</h3>
+						    <span class="job-date">2022 – Present</span>
+						</div>
+						<p class="job-title">University College Dublin</p>
+						<p class="job-details">
+						    • Data Analytics (COMP47350): 2022/23, 2023/24, 2024/25<br>
+						    • Introduction to Artificial Intelligence (COMP30030): 2022/23, 2023/24<br>
+						    • Introduction to Programming I (COMP10010): 2023/24, 2024/25<br>
+						    • Computer Programming II (COMP10120): 2022/23
+						</p>
+				    </div>
+				</section>
 
-      <!-- PROJECTS / MY WORK SECTION -->
-      <div id="my-work-section">
-        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
-        <span class="subheader-text">My research Projects</span>
-          In my PhD project I've been dealing with the following research questions: <ul>
-          <li>Are specific algorithms for (M)TS needed or can we adapt generic explainers such as SHAP or LIME?
-            In the second case, are any adaptations to (M)TS domain needed?</li>
-          <li>How do we objectively evaluate and compare multiple explanation methods for MTSC, especially for
-            scenarios where their outputs disagree (e.g. for saliency-based methods, different explanations
-            provide very different saliency maps)?</li>
-          <li>How can we integrate the insights gained from the explanation methods to improve the accuracy of
-            the classification algorithms (e.g. an iterative optimisation approach)?</li>
-          <li>How can we integrate the insights gained from the explanation methods to improve or reduce the
-            input data (eg, by removing noisy data, selecting good features)?</li>
-      </ul>
-      </div>
-    </div>
+				<!-- Skills Section -->
+				<section id="skills">
+				    <h2>Skills</h2>
+				    <ul class="skill-list">
+				        <li><strong>Programming languages:</strong> Python, Node.js, MATLAB, Java, JavaScript, C++, C, Bash</li>
+				        <li><strong>Deep Learning frameworks:</strong> PyTorch, TensorFlow with CUDA acceleration</li>
+				        <li><strong>Time Series:</strong> sktime, aeon; SOTA classifiers (ROCKET, MiniRocket, Hydra, WEASEL, InceptionTime, ConvTran)</li>
+				        <li><strong>XAI:</strong> SHAP, KernelSHAP, LIME, Feature Ablation, dCAM; frameworks (Captum, SHAP)</li>
+				        <li><strong>Other tools:</strong> Git, Docker, MongoDB, OpenCV, FFmpeg, Express.js</li>
+				    </ul>
+				</section>
 
-        <div id="publications">
-          <span class="subheader-text">List of publications</span>
-          <ul>
+				<!-- Contact Section -->
+				<section id="contact">
+					<h2>Get In Touch</h2>
+					<p>Feel free to reach out for research collaborations, speaking opportunities, or industry positions.</p>
+					<div class="row">
+						<div class="col-8 col-12-small">
+							<form method="post" action="https://formspree.io/f/your-form-id">
+								<div class="row gtr-uniform gtr-50">
+									<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+									<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+									<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</div>
+						<div class="col-4 col-12-small">
+							<ul class="labeled-icons">
+								<li>
+									<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+									Roebuck House<br />
+									Dublin 14, Ireland
+								</li>
+								<li>
+									<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+									<a href="mailto:davide.serramazza@gmail.com">davide.serramazza@gmail.com</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</div> <!-- End of Main -->
 
-              <li>Grasso, Giovanni, Chiara Mannari, and Davide Italo Serramazza.
-                  <br> <b>"PH-Remix. Enhancing Cataloguing and
-                  Promotion of Film Heritage Through Video Remix and Artificial Intelligence."</b> <br>
-                  International Conference Florence Heri-Tech: the Future of Heritage Science and Technologies. Cham:
-                  Springer International Publishing, 2022.</li>
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/davide-serramazza" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://linkedin.com/in/davide-italo-serramazza-88b9501a2" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://scholar.google.com/citations?user=DFHxPqMAAAAJ&hl=en" class="icon brands fa-google"><span class="label">Google Scholar</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Davide Serramazza</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
 
-              <li>Mannari, Chiara, Davide Italo Serramazza, and Enrica Salvatori.
-                  <br> <b>"PH-Remix. Enhancing Cataloguing and "PH-Remix Prototype: A Non Relational
-                  Approach for Exploring AI-Generated Content in Audiovisual Archives."</b> <br>
-                  International Conference on Theory
-                  and Practice of Digital Libraries. Cham: Springer International Publishing, 2022.</li>
-
-              <li>Bacciu Davide, and Serramazza Davide.
-                  <br> <b> "Learning Image Captioning as a Structured Transduction Task."</b> <br>
-                  International Conference on Engineering Applications of Neural Networks. Cham: Springer International
-                  Publishing, 2022.</li>
-
-              <li> Serramazza, D. I., Nguyen, T. T., Le Nguyen, T., & Ifrim, G.
-                  <br> <a href="https://link.springer.com/chapter/10.1007/978-3-031-49896-1_11">
-                  Evaluating explanation methods for multivariate time series classification.</a> <br>
-                    International Workshop
-                  on Advanced Analytics and Learning on Temporal Data. Cham: Springer Nature Switzerland, 2023.</li>
-
-              <li> Serramazza, Davide Italo, Thach Le Nguyen, and Georgiana Ifrim.
-                <br> <a href="https://link.springer.com/chapter/10.1007/978-3-031-70359-1_11">
-                    Improving the evaluation and actionability of explanation methods for multivariate time series
-                    classification." </a>  <br>
-                Joint European Conference on Machine Learning and Knowledge Discovery in Databases. Cham: Springer
-                Nature Switzerland, 2024</li>
-
-              <li> Serramazza, Davide Italo, Thach Le Nguyen, and Georgiana Ifrim.
-                  <br> <a href="https://www.sciencedirect.com/science/article/pii/S2665963824001118">
-                  A short tutorial for multivariate time series explanation using tsCaptum </a> <br>
-                  Software Impacts 22 (2024): 100723. </li>
-
-              <li> Serramazza, Davide Italo,Papadeas Nikos, Abdallah Zahraa, Georgiana Ifrim.
-                <br> <a href="https://github.com/davide-serramazza/segment_SHAP"/>
-                An Empirical Evaluation of Factors Affecting SHAP Explanation of Time Series Classification </a> <br>
-              </li>
-
-          </ul>
-        </div>
-
-        <div id="teaching">
-          <span class="subheader-text">Teaching assistant at UCD Dublin</span>
-          <ul>
-            <li> Data Analytics (COMP47350): years 2022/23, 2023/2024, 2024/2025</li>
-            <li> Introduction to Artificial Intelligence (COMP30030): years 2022/23, 2023/24</li>
-            <li> Introduction to Programming I (COMP10010): year 2023/24</li>
-            <li> Computer Programming II (COMP10120): year 2022/23</li>
-            <li> Teaching assistant for Introduction to Programming I (COMP10010): year 2024/2025</li>
-          </ul>
-        </div>
-
-    <!-- FOOTER -->
-    <div id="footer">
-
-
-        <a class="icon-link" href="mailto:davide.serramazza@ucdconnect.ie">
-            <image src="./assets/icons/mail.svg" class="footer-icon"/>
-        </a>
-
-        <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/davide-italo-serramazza-88b9501a2/">
-            <image src="./assets/icons/linkedin_logo.jpeg" class="footer-icon"/>
-        </a>
-
-        <a class="icon-link" href="https://www.researchgate.net/profile/Davide-Serramazza-2">
-            <image src="./assets/icons/research_gate.png" class="footer-icon"/>
-        </a>
-
-        <a class="icon-link" href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=davide+serramazza&btnG=">
-            <image src="./assets/icons/Google_Scholar_logo.png" class="footer-icon"/>
-        </a>
-    </div>
-
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 	</body>
 </html>
