@@ -73,7 +73,7 @@
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/1664570621696.jpeg" alt="Davide Serramazza profile photo" /></a>
 					<h1><strong>Davide Italo Serramazza</strong><br />
-					PhD Candidate in XAI</h1>
+					PhD in XAI currently looking for applied research and ML engineer roles </h1>
 				</div>
 			</header>
 
@@ -88,11 +88,10 @@
 					<section id="one">
 						<header class="major">
 							<h2>PhD Candidate in XAI for Time Series at UCD<br />
-							Finalizing my thesis</h2>
+							finalizing my thesis</h2>
 						</header>
-						<p>I am currently a PhD candidate in Computer Science at University College Dublin (UCD), conducting research on Explainable Artificial Intelligence (XAI) for Multivariate Time Series Classification. I'm really close to submitting my thesis in early September 2026.<br /><br />
-						My doctoral studies are fully funded by Science Foundation Ireland (SFI) through the ML-Labs research centre, and Dr. Georgiana Ifrim supervises me.<br /><br />
-						To enrich my research and foster international collaboration, I undertook a research visit to the Intelligent System Laboratory at the University of Bristol from April to July 2024, under the supervision of Dr. Zahraa Abdallah.<br /><br />
+						<p> PhD candidate in Computer Science at University College Dublin (UCD), supervised by Dr. Georgiana Ifrim, conducting research on Explainable Artificial Intelligence (XAI) for Multivariate Time Series Classification. Close to thesis submission in early September 2026.<br /><br />
+						To enrich my research and foster international collaboration, I undertook a research visit to the Intelligent System Laboratory at the University of Bristol (England,UK) from April to July 2024, under the supervision of Dr. Zahraa Abdallah.<br /><br />
 						As I approach my graduation, I am exploring challenging opportunities where I can apply my research skills to complex problems. I am actively exploring my next career step and am particularly interested in roles involving research in real industrial settings.</p>
 						<ul class="actions">
 							<li><a href="Davide_Serramazza_Resume.pdf" class="button">Download CV (PDF)</a></li>
@@ -109,12 +108,12 @@
 				<!-- Featured Project Box -->
 				<section id="featured-project">
 				    <h2> Featured Project: tsCaptum</h2>
-				    <div class="education-item">
-					<div class="education-header">
+				    <div class="project-item">
+					<div class="project-header">
 					    <h3>XAI Library for Time Series Classification</h3>
-					    <span class="education-date">Live on PyPI</span>
+					    <span class="priject-data">Live on PyPI</span>
 					</div>
-					<p class="education-details">
+					<p class="project-details">
 					    <strong>Problem:</strong> Standard XAI tools (like Captum) are not optimized for time-series data and are computationally slow.
 					    <br><strong>Solution:</strong> Built <strong>tsCaptum</strong>, a Python library that bridges Captum with time-series frameworks (aeon, sktime), reducing computation time by 1-2 orders of magnitude.
 					    <br><strong>Tech stack:</strong> Python, PyTorch, Captum, aeon, pytest.
@@ -126,6 +125,24 @@
 				    </div>
 				    <hr class="education-divider">
 				</section>
+
+					<h2> Featured Project: drXAI framework</h2>
+					<div class="project-item">
+						<div class="project-header">
+							<h3>XAI Library for Time Series Classification</h3>
+							<span class="priject-data">Live on PyPI</span>
+						</div>
+						<p class="project-details">
+							<strong>Problem:</strong> State of the art for Multivariate Time Series Classifications doesn't scale well with increasing number of channels and time points.
+							<br><strong>Solution:</strong> Built <strong>drXAI</strong>, a Python framework that selects features (either channels or timepoints) into Multivariate Time Series leveraging on saliency maps. It reduces 80–90% of the data while preserving accuracy.
+							<br><strong>Tech stack:</strong> Python, PyTorch, Captum, tsCaptum.
+						</p>
+						<ul class="actions">
+							<li><a href="https://github.com/davide-serramazza/drXAI" class="button small">GitHub Repository</a></li>
+						</ul>
+					</div>
+					<hr class="education-divider">
+					</section>
 								
 							
 							
@@ -138,6 +155,56 @@
 				<!-- Publications Section -->
 				<section id="publications">
 				    <h2>Publications</h2>
+
+					<div class="publication-item">
+						<div class="publication-header">
+							<h3>Scaling Time Series Classification via XAI-Driven Data Reduction</h3>
+							<span class="publication-date">2026</span>
+						</div>
+						<p class="publication-venue">AALTD at PKDD‑ECML 2026 </p>
+						<p class="publication-authors">Serramazza, D. I.& Le Nguyen, T., & Ifrim, G.</p>
+						<p class="publication-summary">Developed drXAI a framework selecting features into a Multivariate Time Series (either channels or time points) by 1) trainig Hydra, a fast yet effective model 2) apply attribution methods to get feature relevance 3) train SOTA classifiers on reduced data.</p>
+					</div>
+
+					<hr class="publication-divider">
+
+					<div class="publication-item">
+						<div class="publication-header">
+							<h3>An empirical evaluation of factors affecting SHAP explanation of time series classification</h3>
+							<span class="publication-date">2025</span>
+						</div>
+						<p class="publication-venue">TempXAI at PKDD‑ECML 2025 / Springer</p>
+						<p class="publication-authors">Serramazza, D. I. & Papadeas, N. & Abdallah, Z., & Ifrim, G.</p>
+						<p class="publication-summary">Found that equal-length segmentation performs best, length-weighted normalization consistently improves quality, and average background yields a small performance boost for SHAP explanations.</p>
+						<a href="https://link.springer.com/chapter/10.1007/978-3-032-19105-2_32" class="button small">View Paper</a>
+					</div>
+
+					<hr class="publication-divider">
+
+					<div class="publication-item">
+						<div class="publication-header">
+							<h3>A short tutorial for multivariate time series explanation using tsCaptum</h3>
+							<span class="publication-date">2024</span>
+						</div>
+						<p class="publication-venue">Software Impacts, Elsevier</p>
+						<p class="publication-authors">Serramazza, D. I. & Le Nguyen, T., & Ifrim, G.</p>
+						<p class="publication-summary">tsCaptum is a library bridging time series frameworks and Captum to efficiently generate saliency maps for univariate/multivariate classifiers using chunking to reduce computational cost.</p>
+						<a href="https://www.sciencedirect.com/science/article/pii/S2665963824001118" class="button small">View Paper</a>
+					</div>
+
+					<hr class="publication-divider">
+
+					<div class="publication-item">
+						<div class="publication-header">
+							<h3>Improving the evaluation and actionability of explanation methods for multivariate time series classification</h3>
+							<span class="publication-date">2024</span>
+						</div>
+						<p class="publication-venue">PKDD‑ECML 2024 Research Track / Springer</p>
+						<p class="publication-authors">Serramazza, D. I.& Le Nguyen, T., & Ifrim, G.</p>
+						<p class="publication-summary">Improved InterpretTime evaluation methodology to work with non-deep learning classifiers, avoid custom training, and be more robust. Experiments confirm SHAP as the best explainer.</p>
+						<a href="https://link.springer.com/chapter/10.1007/978-3-031-70359-1_11" class="button small">View Paper</a>
+					</div>
+
 				    
 				    <div class="publication-item">
 						<div class="publication-header">
@@ -145,49 +212,11 @@
 						    <span class="publication-date">2023</span>
 						</div>
 						<p class="publication-venue">AALTD at PKDD‑ECML 2023 / Springer</p>
-						<p class="publication-authors">Serramazza, D. I., Nguyen, T. T., Le Nguyen, T., & Ifrim, G.</p>
+						<p class="publication-authors">Serramazza, D. I. & Nguyen, T. T. & Le Nguyen, T., & Ifrim, G.</p>
 						<p class="publication-summary">Evaluating explanation methods for multivariate time series classifiers like ROCKET and dResNet using SHAP and dCAM. Results show SHAP outperforms dCAM; techniques for evaluating explainers need refinement.</p>
 						<a href="https://link.springer.com/chapter/10.1007/978-3-031-49896-1_11" class="button small">View Paper</a>
 				    </div>
-				    
-				    <hr class="publication-divider">
-				    
-				    <div class="publication-item">
-						<div class="publication-header">
-						    <h3>Improving the evaluation and actionability of explanation methods for multivariate time series classification</h3>
-						    <span class="publication-date">2024</span>
-						</div>
-						<p class="publication-venue">PKDD‑ECML 2024 Research Track / Springer</p>
-						<p class="publication-authors">Serramazza, D. I., Le Nguyen, T., & Ifrim, G.</p>
-						<p class="publication-summary">Improved InterpretTime evaluation methodology to work with non-deep learning classifiers, avoid custom training, and be more robust. Experiments confirm SHAP as the best explainer.</p>
-						<a href="https://link.springer.com/chapter/10.1007/978-3-031-70359-1_11" class="button small">View Paper</a>
-				    </div>
 
-				    <hr class="publication-divider">
-
-				    <div class="publication-item">
-						<div class="publication-header">
-						    <h3>A short tutorial for multivariate time series explanation using tsCaptum</h3>
-						    <span class="publication-date">2024</span>
-						</div>
-						<p class="publication-venue">Software Impacts, Elsevier</p>
-						<p class="publication-authors">Serramazza, D. I., Le Nguyen, T., & Ifrim, G.</p>
-						<p class="publication-summary">tsCaptum is a library bridging time series frameworks and Captum to efficiently generate saliency maps for univariate/multivariate classifiers using chunking to reduce computational cost.</p>
-						<a href="https://www.sciencedirect.com/science/article/pii/S2665963824001118" class="button small">View Paper</a>
-				    </div>
-				    
-				    <hr class="publication-divider">
-				    
-				    <div class="publication-item">
-						<div class="publication-header">
-						    <h3>An empirical evaluation of factors affecting SHAP explanation of time series classification</h3>
-						    <span class="publication-date">2025</span>
-						</div>
-						<p class="publication-venue">TempXAI at PKDD‑ECML 2025 / Springer</p>
-						<p class="publication-authors">Serramazza, D. I., Papadeas, N., Abdallah, Z., & Ifrim, G.</p>
-						<p class="publication-summary">Found that equal-length segmentation performs best, length-weighted normalization consistently improves quality, and average background yields a small performance boost for SHAP explanations.</p>
-						<a href="https://link.springer.com/chapter/10.1007/978-3-032-19105-2_32" class="button small">View Paper</a>
-				    </div>
 				</section>			
 							
 							
